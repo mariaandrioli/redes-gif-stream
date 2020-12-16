@@ -1,0 +1,345 @@
+- TESTE 3
+
+Terceiro teste de demonstração do funcionamento do streaming de gifs para a disciplina de Rede de Computadores II - 2019/1 - Prof. Elias P. Duarte Jr.
+
+-- Informações do teste
+
+Quantidade de cliente: 5
+Intervalo de tempo em que cada mensagem do stream é transmitida: 1s
+Tempo total de execução do servidor: 1min
+
+-- Linhas de comando para replicação
+
+--- Servidor
+python gifStream.py servidor 1
+
+--- Clientes 
+python gifStream.py cliente
+
+-- Log do servidor
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:10 - Socket criado
+07-Jun-19 14:37:10 - Broadcast setado
+07-Jun-19 14:37:10 - Sou um servidor, ip: maria
+07-Jun-19 14:37:11 - Mandando nova mensagem
+07-Jun-19 14:37:13 - Mandando nova mensagem
+07-Jun-19 14:37:14 - Mandando nova mensagem
+07-Jun-19 14:37:15 - Mandando nova mensagem
+07-Jun-19 14:37:16 - Mandando nova mensagem
+07-Jun-19 14:37:18 - Mandando nova mensagem
+07-Jun-19 14:37:19 - Mandando nova mensagem
+07-Jun-19 14:37:20 - Mandando nova mensagem
+07-Jun-19 14:37:21 - Mandando nova mensagem
+07-Jun-19 14:37:22 - Mandando nova mensagem
+07-Jun-19 14:37:24 - Mandando nova mensagem
+07-Jun-19 14:37:25 - Mandando nova mensagem
+07-Jun-19 14:37:26 - Mandando nova mensagem
+07-Jun-19 14:37:27 - Mandando nova mensagem
+07-Jun-19 14:37:29 - Mandando nova mensagem
+07-Jun-19 14:37:30 - Mandando nova mensagem
+07-Jun-19 14:37:31 - Mandando nova mensagem
+07-Jun-19 14:37:32 - Mandando nova mensagem
+07-Jun-19 14:37:34 - Mandando nova mensagem
+07-Jun-19 14:37:35 - Mandando nova mensagem
+07-Jun-19 14:37:36 - Mandando nova mensagem
+07-Jun-19 14:37:37 - Mandando nova mensagem
+07-Jun-19 14:37:38 - Mandando nova mensagem
+07-Jun-19 14:37:40 - Mandando nova mensagem
+07-Jun-19 14:37:41 - Mandando nova mensagem
+07-Jun-19 14:37:42 - Mandando nova mensagem
+07-Jun-19 14:37:43 - Mandando nova mensagem
+07-Jun-19 14:37:45 - Mandando nova mensagem
+07-Jun-19 14:37:46 - Mandando nova mensagem
+07-Jun-19 14:37:47 - Mandando nova mensagem
+07-Jun-19 14:37:48 - Mandando nova mensagem
+07-Jun-19 14:37:49 - Mandando nova mensagem
+07-Jun-19 14:37:51 - Mandando nova mensagem
+07-Jun-19 14:37:52 - Mandando nova mensagem
+07-Jun-19 14:37:53 - Mandando nova mensagem
+07-Jun-19 14:37:54 - Mandando nova mensagem
+07-Jun-19 14:37:56 - Mandando nova mensagem
+07-Jun-19 14:37:57 - Mandando nova mensagem
+07-Jun-19 14:37:58 - Mandando nova mensagem
+07-Jun-19 14:37:59 - Mandando nova mensagem
+07-Jun-19 14:38:01 - Mandando nova mensagem
+^C07-Jun-19 14:38:01 - Houve interrupção do teclado, vou finalizar
+
+Desconectando servidor, fechando socket, desconectando clientes...
+
+-- Log do cliente 1 (conectado no começo da transmissão, desligado no meio da transmissão)
+
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:10 - Socket criado
+07-Jun-19 14:37:10 - Broadcast setado
+07-Jun-19 14:37:10 - Sou um cliente, ip: maria
+07-Jun-19 14:37:11 - Recebi data: [0, "https://media2.giphy.com/media/TzcldGoR5WGek/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:13 - Recebi data: [1, "https://media2.giphy.com/media/2Ylbyn5NC2NItldm2C/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:14 - Recebi data: [2, "https://media0.giphy.com/media/atnEqQwT2jexy/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:15 - Recebi data: [3, "https://media1.giphy.com/media/bQtt9enK4jjFu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:16 - Recebi data: [4, "https://media1.giphy.com/media/OucnQNtMhD9SM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:18 - Recebi data: [5, "https://media1.giphy.com/media/QNlo8KSiMN7TT0gHbX/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:19 - Recebi data: [6, "https://media0.giphy.com/media/HuDZEDKe0P8hq/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:20 - Recebi data: [7, "https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:21 - Recebi data: [8, "https://media1.giphy.com/media/m6d58HroOrntm/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:22 - Recebi data: [9, "https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:24 - Recebi data: [10, "https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:25 - Recebi data: [11, "https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:26 - Recebi data: [12, "https://media0.giphy.com/media/IL37VYwGisDXq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:27 - Recebi data: [13, "https://media1.giphy.com/media/Yzi4GbhHp6isM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:29 - Recebi data: [14, "https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:30 - Recebi data: [15, "https://media2.giphy.com/media/RG5trSir3YNZ6/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:31 - Recebi data: [16, "", "sticker"] do servidor
+07-Jun-19 14:37:31 - Url vazia
+07-Jun-19 14:37:32 - Recebi data: [17, "https://media3.giphy.com/media/PiMh4iRgxhIHu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:34 - Recebi data: [18, "https://media0.giphy.com/media/tQFUQF5NtFB9m/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:35 - Recebi data: [19, "https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:36 - Recebi data: [20, "https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:37 - Recebi data: [21, "", "sticker"] do servidor
+07-Jun-19 14:37:37 - Url vazia
+07-Jun-19 14:37:38 - Recebi data: [22, "https://media1.giphy.com/media/hOqAGBayrQQCI/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:40 - Recebi data: [23, "https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:41 - Recebi data: [24, "https://media0.giphy.com/media/6N2cY6jNRFh0k/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:42 - Recebi data: [25, "https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif", "sticker"] do servidor
+^C07-Jun-19 14:37:43 - Quantidade de pacotes fora de ordem: 0
+07-Jun-19 14:37:43 - Quantidade de pacotes perdidos: 0
+07-Jun-19 14:37:43 - Quantidade de Stickers: 11
+07-Jun-19 14:37:43 - Porcentagem de stickers em relação ao total: 42.31%
+07-Jun-19 14:37:43 - Stickers: 
+['https://media1.giphy.com/media/QNlo8KSiMN7TT0gHbX/200_d.gif', 'https://media0.giphy.com/media/HuDZEDKe0P8hq/200_d.gif', 'https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif', 'https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif', 'https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif', 'https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif', 'https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif', 'https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif', 'https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif']
+
+Desconectando cliente...
+
+
+-- Log do cliente 2 (conectado no começo da transmissão)
+
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:11 - Socket criado
+07-Jun-19 14:37:11 - Broadcast setado
+07-Jun-19 14:37:11 - Sou um cliente, ip: maria
+07-Jun-19 14:37:11 - Recebi data: [0, "https://media2.giphy.com/media/TzcldGoR5WGek/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:13 - Recebi data: [1, "https://media2.giphy.com/media/2Ylbyn5NC2NItldm2C/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:14 - Recebi data: [2, "https://media0.giphy.com/media/atnEqQwT2jexy/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:15 - Recebi data: [3, "https://media1.giphy.com/media/bQtt9enK4jjFu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:16 - Recebi data: [4, "https://media1.giphy.com/media/OucnQNtMhD9SM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:18 - Recebi data: [5, "https://media1.giphy.com/media/QNlo8KSiMN7TT0gHbX/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:19 - Recebi data: [6, "https://media0.giphy.com/media/HuDZEDKe0P8hq/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:20 - Recebi data: [7, "https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:21 - Recebi data: [8, "https://media1.giphy.com/media/m6d58HroOrntm/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:22 - Recebi data: [9, "https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:24 - Recebi data: [10, "https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:25 - Recebi data: [11, "https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:26 - Recebi data: [12, "https://media0.giphy.com/media/IL37VYwGisDXq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:27 - Recebi data: [13, "https://media1.giphy.com/media/Yzi4GbhHp6isM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:29 - Recebi data: [14, "https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:30 - Recebi data: [15, "https://media2.giphy.com/media/RG5trSir3YNZ6/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:31 - Recebi data: [16, "", "sticker"] do servidor
+07-Jun-19 14:37:31 - Url vazia
+07-Jun-19 14:37:32 - Recebi data: [17, "https://media3.giphy.com/media/PiMh4iRgxhIHu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:34 - Recebi data: [18, "https://media0.giphy.com/media/tQFUQF5NtFB9m/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:35 - Recebi data: [19, "https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:36 - Recebi data: [20, "https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:37 - Recebi data: [21, "", "sticker"] do servidor
+07-Jun-19 14:37:37 - Url vazia
+07-Jun-19 14:37:38 - Recebi data: [22, "https://media1.giphy.com/media/hOqAGBayrQQCI/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:40 - Recebi data: [23, "https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:41 - Recebi data: [24, "https://media0.giphy.com/media/6N2cY6jNRFh0k/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:42 - Recebi data: [25, "https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:43 - Recebi data: [26, "https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:45 - Recebi data: [27, "https://media1.giphy.com/media/12DolBvP0M4mY0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:46 - Recebi data: [28, "https://media1.giphy.com/media/5wWf7H9SWjloq0s1Qkw/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:47 - Recebi data: [29, "https://media2.giphy.com/media/6llolVJNmFArK/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:48 - Recebi data: [30, "https://media2.giphy.com/media/dXV7qyO74kJW0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:49 - Recebi data: [31, "https://media2.giphy.com/media/gkCX3Q3AjTCE0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:51 - Recebi data: [32, "https://media3.giphy.com/media/xTiTneU9KkdhmqjRK0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:52 - Recebi data: [33, "https://media2.giphy.com/media/l0DAG3rKs4jT96LNC/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:53 - Recebi data: [34, "", "sticker"] do servidor
+07-Jun-19 14:37:53 - Url vazia
+07-Jun-19 14:37:54 - Recebi data: [35, "https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:56 - Recebi data: [36, "https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:57 - Recebi data: [37, "", "sticker"] do servidor
+07-Jun-19 14:37:57 - Url vazia
+07-Jun-19 14:37:58 - Recebi data: [38, "https://media2.giphy.com/media/YVRWiihuMWHUk/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:59 - Recebi data: [39, "https://media2.giphy.com/media/ZCjHaaemsCoSY/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: [40, "https://media3.giphy.com/media/usceN9o7hj2Zq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: fim do servidor
+07-Jun-19 14:38:01 - Recebi interrupcão do servidor, vou finalizar conexão
+07-Jun-19 14:38:01 - Quantidade de pacotes fora de ordem: 0
+07-Jun-19 14:38:01 - Quantidade de pacotes perdidos: 0
+07-Jun-19 14:38:01 - Quantidade de Stickers: 14
+07-Jun-19 14:38:01 - Porcentagem de stickers em relação ao total: 34.15%
+07-Jun-19 14:38:01 - Stickers: 
+['https://media1.giphy.com/media/QNlo8KSiMN7TT0gHbX/200_d.gif', 'https://media0.giphy.com/media/HuDZEDKe0P8hq/200_d.gif', 'https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif', 'https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif', 'https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif', 'https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif', 'https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif', 'https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif', 'https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif', 'https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif', 'https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif', 'https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif']
+
+Desconectando cliente...
+
+
+-- Log do cliente 3 (conectado no meio da transmissão, desligado no meio da transmissão)
+
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:19 - Socket criado
+07-Jun-19 14:37:19 - Broadcast setado
+07-Jun-19 14:37:19 - Sou um cliente, ip: maria
+07-Jun-19 14:37:20 - Recebi data: [7, "https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:21 - Recebi data: [8, "https://media1.giphy.com/media/m6d58HroOrntm/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:22 - Recebi data: [9, "https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:24 - Recebi data: [10, "https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:25 - Recebi data: [11, "https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:26 - Recebi data: [12, "https://media0.giphy.com/media/IL37VYwGisDXq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:27 - Recebi data: [13, "https://media1.giphy.com/media/Yzi4GbhHp6isM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:29 - Recebi data: [14, "https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:30 - Recebi data: [15, "https://media2.giphy.com/media/RG5trSir3YNZ6/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:31 - Recebi data: [16, "", "sticker"] do servidor
+07-Jun-19 14:37:31 - Url vazia
+07-Jun-19 14:37:32 - Recebi data: [17, "https://media3.giphy.com/media/PiMh4iRgxhIHu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:34 - Recebi data: [18, "https://media0.giphy.com/media/tQFUQF5NtFB9m/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:35 - Recebi data: [19, "https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:36 - Recebi data: [20, "https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:37 - Recebi data: [21, "", "sticker"] do servidor
+07-Jun-19 14:37:37 - Url vazia
+07-Jun-19 14:37:38 - Recebi data: [22, "https://media1.giphy.com/media/hOqAGBayrQQCI/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:40 - Recebi data: [23, "https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:41 - Recebi data: [24, "https://media0.giphy.com/media/6N2cY6jNRFh0k/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:42 - Recebi data: [25, "https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:43 - Recebi data: [26, "https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:45 - Recebi data: [27, "https://media1.giphy.com/media/12DolBvP0M4mY0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:46 - Recebi data: [28, "https://media1.giphy.com/media/5wWf7H9SWjloq0s1Qkw/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:47 - Recebi data: [29, "https://media2.giphy.com/media/6llolVJNmFArK/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:48 - Recebi data: [30, "https://media2.giphy.com/media/dXV7qyO74kJW0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:49 - Recebi data: [31, "https://media2.giphy.com/media/gkCX3Q3AjTCE0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:51 - Recebi data: [32, "https://media3.giphy.com/media/xTiTneU9KkdhmqjRK0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:52 - Recebi data: [33, "https://media2.giphy.com/media/l0DAG3rKs4jT96LNC/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:53 - Recebi data: [34, "", "sticker"] do servidor
+07-Jun-19 14:37:53 - Url vazia
+07-Jun-19 14:37:54 - Recebi data: [35, "https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:56 - Recebi data: [36, "https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif", "sticker"] do servidor
+^C07-Jun-19 14:37:56 - Quantidade de pacotes fora de ordem: 0
+07-Jun-19 14:37:56 - Quantidade de pacotes perdidos: 7
+07-Jun-19 14:37:56 - Quantidade de Stickers: 12
+07-Jun-19 14:37:56 - Porcentagem de stickers em relação ao total: 40.00%
+07-Jun-19 14:37:56 - Stickers: 
+['https://media0.giphy.com/media/7XrvD4TSv4ugoZpahy/200_d.gif', 'https://media0.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media2.giphy.com/media/QORJEFijsOfTwjOSoN/200_d.gif', 'https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif', 'https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif', 'https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif', 'https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif', 'https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif', 'https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif', 'https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif', 'https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif']
+
+Desconectando cliente...
+
+
+-- Log do cliente 4 (conectado no meio da transmissão)
+
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:25 - Socket criado
+07-Jun-19 14:37:25 - Broadcast setado
+07-Jun-19 14:37:25 - Sou um cliente, ip: maria
+07-Jun-19 14:37:25 - Recebi data: [11, "https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:26 - Recebi data: [12, "https://media0.giphy.com/media/IL37VYwGisDXq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:27 - Recebi data: [13, "https://media1.giphy.com/media/Yzi4GbhHp6isM/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:29 - Recebi data: [14, "https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:30 - Recebi data: [15, "https://media2.giphy.com/media/RG5trSir3YNZ6/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:31 - Recebi data: [16, "", "sticker"] do servidor
+07-Jun-19 14:37:31 - Url vazia
+07-Jun-19 14:37:32 - Recebi data: [17, "https://media3.giphy.com/media/PiMh4iRgxhIHu/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:34 - Recebi data: [18, "https://media0.giphy.com/media/tQFUQF5NtFB9m/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:35 - Recebi data: [19, "https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:36 - Recebi data: [20, "https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:37 - Recebi data: [21, "", "sticker"] do servidor
+07-Jun-19 14:37:37 - Url vazia
+07-Jun-19 14:37:38 - Recebi data: [22, "https://media1.giphy.com/media/hOqAGBayrQQCI/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:40 - Recebi data: [23, "https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:41 - Recebi data: [24, "https://media0.giphy.com/media/6N2cY6jNRFh0k/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:42 - Recebi data: [25, "https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:43 - Recebi data: [26, "https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:45 - Recebi data: [27, "https://media1.giphy.com/media/12DolBvP0M4mY0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:46 - Recebi data: [28, "https://media1.giphy.com/media/5wWf7H9SWjloq0s1Qkw/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:47 - Recebi data: [29, "https://media2.giphy.com/media/6llolVJNmFArK/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:48 - Recebi data: [30, "https://media2.giphy.com/media/dXV7qyO74kJW0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:49 - Recebi data: [31, "https://media2.giphy.com/media/gkCX3Q3AjTCE0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:51 - Recebi data: [32, "https://media3.giphy.com/media/xTiTneU9KkdhmqjRK0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:52 - Recebi data: [33, "https://media2.giphy.com/media/l0DAG3rKs4jT96LNC/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:53 - Recebi data: [34, "", "sticker"] do servidor
+07-Jun-19 14:37:53 - Url vazia
+07-Jun-19 14:37:54 - Recebi data: [35, "https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:56 - Recebi data: [36, "https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:57 - Recebi data: [37, "", "sticker"] do servidor
+07-Jun-19 14:37:57 - Url vazia
+07-Jun-19 14:37:58 - Recebi data: [38, "https://media2.giphy.com/media/YVRWiihuMWHUk/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:59 - Recebi data: [39, "https://media2.giphy.com/media/ZCjHaaemsCoSY/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: [40, "https://media3.giphy.com/media/usceN9o7hj2Zq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: fim do servidor
+07-Jun-19 14:38:01 - Recebi interrupcão do servidor, vou finalizar conexão
+07-Jun-19 14:38:01 - Quantidade de pacotes fora de ordem: 0
+07-Jun-19 14:38:01 - Quantidade de pacotes perdidos: 11
+07-Jun-19 14:38:01 - Quantidade de Stickers: 9
+07-Jun-19 14:38:01 - Porcentagem de stickers em relação ao total: 30.00%
+07-Jun-19 14:38:01 - Stickers: 
+['https://media1.giphy.com/media/1zjvrHE4GTJQT9IhtT/200_d.gif', 'https://media0.giphy.com/media/5sYeHMudFP2keywG80/200_d.gif', 'https://media0.giphy.com/media/QLwEspx3jyzBFU91NJ/200_d.gif', 'https://media3.giphy.com/media/52FIYNsKT5eHXLu7d8/200_d.gif', 'https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif', 'https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif', 'https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif', 'https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif', 'https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif']
+
+Desconectando cliente...
+
+
+-- Log do cliente 5 (conectado no meio da transmissão)
+
+===================================================================
+Redes de Computadores II - Turma 2019/1 - Prof. Elias P. Duarte Jr.
+Maria Teresa Kravetz Andrioli - GRR20171602 - mtka17
+Ana Carolina Faria Magnoni - GRR20166808 - acfm16
+===================================================================
+
+07-Jun-19 14:37:37 - Socket criado
+07-Jun-19 14:37:37 - Broadcast setado
+07-Jun-19 14:37:37 - Sou um cliente, ip: maria
+07-Jun-19 14:37:37 - Recebi data: [21, "", "sticker"] do servidor
+07-Jun-19 14:37:37 - Url vazia
+07-Jun-19 14:37:38 - Recebi data: [22, "https://media1.giphy.com/media/hOqAGBayrQQCI/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:40 - Recebi data: [23, "https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:41 - Recebi data: [24, "https://media0.giphy.com/media/6N2cY6jNRFh0k/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:42 - Recebi data: [25, "https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:43 - Recebi data: [26, "https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:45 - Recebi data: [27, "https://media1.giphy.com/media/12DolBvP0M4mY0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:46 - Recebi data: [28, "https://media1.giphy.com/media/5wWf7H9SWjloq0s1Qkw/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:47 - Recebi data: [29, "https://media2.giphy.com/media/6llolVJNmFArK/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:48 - Recebi data: [30, "https://media2.giphy.com/media/dXV7qyO74kJW0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:49 - Recebi data: [31, "https://media2.giphy.com/media/gkCX3Q3AjTCE0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:51 - Recebi data: [32, "https://media3.giphy.com/media/xTiTneU9KkdhmqjRK0/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:52 - Recebi data: [33, "https://media2.giphy.com/media/l0DAG3rKs4jT96LNC/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:53 - Recebi data: [34, "", "sticker"] do servidor
+07-Jun-19 14:37:53 - Url vazia
+07-Jun-19 14:37:54 - Recebi data: [35, "https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:56 - Recebi data: [36, "https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif", "sticker"] do servidor
+07-Jun-19 14:37:57 - Recebi data: [37, "", "sticker"] do servidor
+07-Jun-19 14:37:57 - Url vazia
+07-Jun-19 14:37:58 - Recebi data: [38, "https://media2.giphy.com/media/YVRWiihuMWHUk/200_d.gif", "gif"] do servidor
+07-Jun-19 14:37:59 - Recebi data: [39, "https://media2.giphy.com/media/ZCjHaaemsCoSY/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: [40, "https://media3.giphy.com/media/usceN9o7hj2Zq/200_d.gif", "gif"] do servidor
+07-Jun-19 14:38:01 - Recebi data: fim do servidor
+07-Jun-19 14:38:01 - Recebi interrupcão do servidor, vou finalizar conexão
+07-Jun-19 14:38:01 - Quantidade de pacotes fora de ordem: 0
+07-Jun-19 14:38:01 - Quantidade de pacotes perdidos: 21
+07-Jun-19 14:38:01 - Quantidade de Stickers: 5
+07-Jun-19 14:38:01 - Porcentagem de stickers em relação ao total: 25.00%
+07-Jun-19 14:38:01 - Stickers: 
+['https://media3.giphy.com/media/yymXYdjfJ42mlE7rhQ/200_d.gif', 'https://media3.giphy.com/media/5tvT1j2Fy2FuKmNY62/200_d.gif', 'https://media3.giphy.com/media/246UtfgnY3AzTvGzk0/200_d.gif', 'https://media2.giphy.com/media/CLfEpgLbOMfnO/200_d.gif', 'https://media0.giphy.com/media/9ryEJov6lxv6LzECWF/200_d.gif']
+
+Desconectando cliente...
